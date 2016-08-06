@@ -2,12 +2,13 @@
 
 body {
     background-image: url("../img/gradient.png");
+    font-size: 14px;
+
 }
 
 .main-container {
     margin: 0 auto;
     width: 78%;
-    height: 500px;
     background-color: green;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
@@ -101,30 +102,36 @@ header-line (каждый как бы отдельная строка в header)
     padding: 0 5px;
 }
 
-.menu li a{
+.menu > li > a{
     display: block;
     height: 30px;
     line-height: 20px;
     padding-left: 15px;
     width: 135px;
+    background-image: url("../img/white_triangles.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+
 }
 
 .submenu {
     top: 30px;
     display: none;
     position: absolute;
+    box-sizing: border-box;
+
 }
 
 .submenu > li > a {
     display: block;
+    height:30px;
+    line-height: 30px;
     text-align: left;
     background-color: #303030;
     width: 150px;
     padding: 0 10px;
-    border-radius: 1px;
-    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    /*border-radius: 1px;*/
 }
 
 .menu > li:hover > .submenu,
@@ -134,4 +141,46 @@ header-line (каждый как бы отдельная строка в header)
 
 .submenu li a:hover {
     background-color: #252525;
+}
+
+.body-box {
+    background-color: #edeef0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.pan {
+    height: 2000000px;
+}
+
+.pan p {
+    padding: 0 10px;
+}
+
+.left-panel {
+    float: left;
+    width: 20%;
+}
+.right-panel {
+    float: right;
+    width: 20%;
+}
+.main-panel {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+
+/*FOOTER*/
+
+footer {
+    height: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 40px;
+    color:white;
 }

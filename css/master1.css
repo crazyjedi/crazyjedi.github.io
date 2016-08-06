@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 body {
     background-image: url("../img/gradient.png");
 }
@@ -9,14 +11,11 @@ body {
     background-color: green;
 }
 
-.clearfix:after {
+.clearfix:after,
+.clearfix:before {
     content: '';
     clear: both;
     display: block;
-}
-
-.clearfix:before {
-    display: table;
 }
 
 /*HEADER*/
@@ -24,16 +23,43 @@ body {
 header {
     height:175px;
     background-color: #fff;
-    padding: 10px 0px 0px 10px;
+
 }
 
 .logo-container {
     float: left;
+    padding: 10px 0px 0px 10px;
 }
 
 .header-right {
     float: right;
-    width: 400px;
-    height: 150px;
-    background-color: blue;
+    padding-right:35px;
+}
+
+.contacts-container {
+    padding: 10px 0 35px 0px;*/
+}
+
+.contacts {
+    float: right;
+    font-family: "Tahoma Regular";
+    line-height: 16px;
+    font-size: 13px;
+    color: #128aa7;
+}
+
+.countries-list li {
+    display: inline-block;
+}
+
+/*BODY*/
+
+.photo {
+    /*background: red;*/
+    padding: 0;
+
+}
+
+.main-photo {
+    width: 100%;
 }
