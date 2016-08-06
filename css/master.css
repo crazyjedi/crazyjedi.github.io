@@ -118,7 +118,7 @@ header-line (каждый как бы отдельная строка в header)
     padding: 5px 10px;
 }
 
-.menu > li:hover > .submenu,
+.menu > a:hover > .submenu,
 .submenu:hover {
     display: block;
 }
