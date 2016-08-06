@@ -1,38 +1,38 @@
 /*GENERAL*/
 
 body {
-    background-image: url("../img/gradient.png");
+    background-attachment: fixed;
+    background-image: url('../img/gradient.png');
     font-size: 14px;
 
 }
 
 .main-container {
-    margin: 0 auto;
     width: 78%;
-    background-color: green;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    -moz-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .75);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .75);
 }
 
-.clearfix:after,
-.clearfix:before {
-    content: '';
-    clear: both;
+.clearfix::after,
+.clearfix::before {
     display: block;
+    clear: both;
+    content: '';
 }
 
 a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 /*HEADER*/
 
 header {
-    height:175px;
-    background-color: #fff;
     position: relative;
+    height: 175px;
+    background-color: #fff;
 }
 
 /*уддобней всего, на мой взгляд, логотип спозиционировать абсолютно,
@@ -49,16 +49,16 @@ header-line (каждый как бы отдельная строка в header)
 }
 
 .header-line {
-    padding-right:35px;
+    padding-right: 35px;
 }
 
 .contacts {
-    float: right;
-    font-family: "Tahoma Regular";
     margin-top: 10px;
-    line-height: 16px;
-    font-size: 13px;
+    float: right;
     color: #128aa7;
+    font-family: 'Tahoma Regular';
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .countries-menu {
@@ -83,14 +83,14 @@ header-line (каждый как бы отдельная строка в header)
 }
 
 .main-menu {
-    background-image: url("../img/menu_background.png");
     height: 30px;
-    border-bottom: 1px solid #000;
-    box-sizing: border-box;
     padding-left: 50px;
-    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    border-bottom: 1px solid #000;
+    background-image: url('../img/menu_background.png');
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
+    box-sizing: border-box;
 }
 
 .menu {
@@ -102,35 +102,33 @@ header-line (каждый как бы отдельная строка в header)
     padding: 0 5px;
 }
 
-.menu > li > a{
+.menu > li > a {
     display: block;
-    height: 30px;
-    line-height: 20px;
-    padding-left: 15px;
     width: 135px;
-    background-image: url("../img/white_triangles.png");
+    height: 30px;
+    padding-left: 15px;
+    background-image: url('../img/white_triangles.png');
     background-repeat: no-repeat;
     background-position: right center;
-
+    line-height: 20px;
 }
 
 .submenu {
-    top: 30px;
     display: none;
     position: absolute;
+    top: 30px;
     box-sizing: border-box;
-
 }
 
 .submenu > li > a {
     display: block;
-    height:30px;
+    width: 150px;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #303030;
     line-height: 30px;
     text-align: left;
-    background-color: #303030;
-    width: 150px;
-    padding: 0 10px;
-    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .75);
     /*border-radius: 1px;*/
 }
 
@@ -145,32 +143,34 @@ header-line (каждый как бы отдельная строка в header)
 
 .body-box {
     background-color: #edeef0;
-    height: 500px;
     overflow: hidden;
 }
 
 .pan {
-    height: 2000000px;
+    margin-bottom: -2000000px;
+    padding-bottom: 2000000px;
 }
 
 .pan p {
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .left-panel {
+    width: 20%;
     float: left;
-    width: 20%;
 }
-.right-panel {
-    float: right;
-    width: 20%;
-}
+
 .main-panel {
     width: 60%;
-    margin: 0 auto;
+    float: left;
     background-color: #fff;
-
 }
+
+.right-panel {
+    width: 20%;
+    float: left;
+}
+
 
 /*FOOTER*/
 
@@ -180,7 +180,7 @@ footer {
 }
 
 footer p {
+    color: #fff;
     font-size: 12px;
     line-height: 40px;
-    color:white;
 }
