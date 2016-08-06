@@ -68,9 +68,13 @@ header-line (каждый как бы отдельная строка в header)
 
 /*BODY*/
 
+.photo {
+    /*background: red;*/
+    /*padding: 0;*/
+
+}
 
 .main-photo {
-    margin-top: -1px;
     width: 100%;
 }
 
@@ -114,14 +118,9 @@ header-line (каждый как бы отдельная строка в header)
     padding: 5px 10px;
 }
 
-.submenu > li {
-    display: block;
-}
 
+
+.menu > li:hover > .submenu,
 .submenu:hover {
-    display: block;
-}
-
-.menu > a:hover > .submenu {
     display: block;
 }
