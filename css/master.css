@@ -122,6 +122,10 @@ header-line (каждый как бы отдельная строка в header)
     display: block;
 }
 
+.submenu:hover {
+    display: block;
+}
+
 .menu > a:hover > .submenu {
     display: block;
 }
