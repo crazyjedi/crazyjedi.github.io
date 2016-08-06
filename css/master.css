@@ -68,13 +68,9 @@ header-line (каждый как бы отдельная строка в header)
 
 /*BODY*/
 
-.photo {
-    /*background: red;*/
-    /*padding: 0;*/
-
-}
 
 .main-photo {
+    margin-top: -1px;
     width: 100%;
 }
 
