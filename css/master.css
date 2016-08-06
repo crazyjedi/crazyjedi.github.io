@@ -131,3 +131,7 @@ header-line (каждый как бы отдельная строка в header)
 .submenu:hover {
     display: block;
 }
+
+.submenu li a:hover {
+    background-color: #252525;
+}
