@@ -9,6 +9,9 @@ body {
     width: 78%;
     height: 500px;
     background-color: green;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
 }
 
 .clearfix:after,
@@ -84,6 +87,9 @@ header-line (каждый как бы отдельная строка в header)
     border-bottom: 1px solid #000;
     box-sizing: border-box;
     padding-left: 50px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 }
 
 .menu {
@@ -100,7 +106,7 @@ header-line (каждый как бы отдельная строка в header)
     height: 30px;
     line-height: 20px;
     padding-left: 15px;
-    width: 150px;
+    width: 135px;
 }
 
 .submenu {
@@ -114,7 +120,11 @@ header-line (каждый как бы отдельная строка в header)
     text-align: left;
     background-color: #303030;
     width: 150px;
-    padding: 5px 10px;
+    padding: 0 10px;
+    border-radius: 1px;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
 }
 
 .menu > li:hover > .submenu,
