@@ -84,6 +84,7 @@ header-line (каждый как бы отдельная строка в header)
 
 .main-menu {
     height: 30px;
+    margin-top: -2px;
     padding-left: 50px;
     border-bottom: 1px solid #000;
     background-image: url('../img/menu_background.png');
@@ -111,6 +112,7 @@ header-line (каждый как бы отдельная строка в header)
     background-repeat: no-repeat;
     background-position: right center;
     line-height: 20px;
+    box-sizing: border-box;
 }
 
 .submenu {
