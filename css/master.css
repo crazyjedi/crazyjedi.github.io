@@ -84,7 +84,7 @@ header-line (каждый как бы отдельная строка в header)
 
 .main-menu {
     height: 30px;
-    margin-top: -2px;
+    margin-top: -3px;
     padding-left: 50px;
     border-bottom: 1px solid #000;
     background-image: url('../img/menu_background.png');
