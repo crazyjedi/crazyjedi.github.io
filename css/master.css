@@ -1,3 +1,127 @@
+/*GENERAL*/
+
 body {
     background-image: url("../img/gradient.png");
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 78%;
+    height: 500px;
+    background-color: green;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*HEADER*/
+
+header {
+    height:175px;
+    background-color: #fff;
+    position: relative;
+}
+
+/*уддобней всего, на мой взгляд, логотип спозиционировать абсолютно,
+а контакты и ссылки на страны разместить в отдельных div-ах класса
+header-line (каждый как бы отдельная строка в header).
+
+Сами контакты и список стран - в контейнерах с float: right;
+*/
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.header-line {
+    padding-right:35px;
+}
+
+.contacts {
+    float: right;
+    font-family: "Tahoma Regular";
+    margin-top: 10px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #128aa7;
+}
+
+.countries-menu {
+    margin-top: 35px;
+    float: right;
+}
+
+.countries-list li {
+    display: inline-block;
+}
+
+/*BODY*/
+
+.photo {
+    /*background: red;*/
+    /*padding: 0;*/
+
+}
+
+.main-photo {
+    width: 100%;
+}
+
+.main-menu {
+    background-image: url("../img/menu_background.png");
+    height: 30px;
+    border-bottom: 1px solid #000;
+}
+
+.menu {
+    display: inline-flex;
+
+    /*background: black;*/
+
+}
+
+.menu li {
+    position: relative;
+
+}
+
+.menu li a{
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    width: 150px;
+    padding: 0 5px;
+}
+
+.submenu {
+    top: 30px;
+    display: none;
+    position: absolute;
+}
+
+.submenu > li > a {
+    display: block;
+    text-align: left;
+    background-color: #303030;
+    width: 150px;
+    padding: 5px 10px;
+}
+
+.submenu > li {
+    display: block;
+}
+
+.menu > li:hover > .submenu {
+    display: block;
 }

@@ -1,0 +1,39 @@
+body {
+    background-image: url("../img/gradient.png");
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 78%;
+    height: 500px;
+    background-color: green;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.clearfix:before {
+    display: table;
+}
+
+/*HEADER*/
+
+header {
+    height:175px;
+    background-color: #fff;
+    padding: 10px 0px 0px 10px;
+}
+
+.logo-container {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    width: 400px;
+    height: 150px;
+    background-color: blue;
+}
