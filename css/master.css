@@ -38,7 +38,6 @@ header {
 /*уддобней всего, на мой взгляд, логотип спозиционировать абсолютно,
 а контакты и ссылки на страны разместить в отдельных div-ах класса
 header-line (каждый как бы отдельная строка в header).
-
 Сами контакты и список стран - в контейнерах с float: right;
 */
 
@@ -66,8 +65,26 @@ header-line (каждый как бы отдельная строка в header)
     float: right;
 }
 
-.countries-list li {
+
+
+.countries-list > li {
     display: inline-block;
+    /*margin: 0 -1px;*/
+    width : 55px;
+}
+
+.countries-menu a,
+.countries-menu span
+ {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #128aa7;
+}
+
+.country-name:hover {
+    color: #ff062f;
+
 }
 
 /*BODY*/
@@ -80,68 +97,73 @@ header-line (каждый как бы отдельная строка в header)
 
 .main-photo {
     width: 100%;
+    border-top:2px solid #138aa7;
+    border-bottom:2px solid #138aa7;
 }
 
 .main-menu {
     height: 30px;
     margin-top: -3px;
-    padding-left: 50px;
+    padding-left: 20px;
     border-bottom: 1px solid #000;
+    border-top: 1px solid #cacbcb;
     background-image: url('../img/menu_background.png');
-    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
-    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .75);
-    box-sizing: border-box;
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
+    position:relative;
+    z-index:2;
 }
 
 .menu {
-    display: inline-block;
+    display: inline-flex;
+    width: 1020px;
+    font-size: 13px;
+    text-align: center;
 }
 
-.menu li {
-    position: relative;
-    margin-right: 10px;
-    padding: 0 5px;
-}
 
-.menu > li > a {
-    display: block;
-    width: 130px;
-    height: 30px;
-    padding-left: 5px;
-    line-height: 20px;
+.triangle-box {
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    line-height: 25px;
     box-sizing: border-box;
 }
 
-.menu > li:last-child {
-    padding-left: 0;
+
+.menu > li {
+    position: relative;
+    width: 14%;
+    padding: 0 5px;
 }
 
-.menu > li:nth-child(2) > a,
-.menu > li:nth-child(3) > a,
-.menu > li:nth-child(4) > a {
-    background-image: url('../img/white_triangles.png');
-    background-repeat: no-repeat;
-    background-position: right center;
+
+.menu > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 25px;
+    box-sizing: border-box;
 }
 
 .submenu {
     display: none;
     position: absolute;
     top: 30px;
+    left: 20px;
     box-sizing: border-box;
 }
 
 .submenu > li > a {
     display: block;
-    width: 120px;
+    width: 130px;
     height: 30px;
     padding: 0 10px;
     background-color: #303030;
     line-height: 30px;
     text-align: left;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .75);
-    /*border-radius: 1px;*/
 }
 
 .menu > li:hover > .submenu,
@@ -155,13 +177,9 @@ header-line (каждый как бы отдельная строка в header)
 
 .body-box {
     background-color: #edeef0;
-    overflow: hidden;
+    display: flex;
 }
 
-.pan {
-    margin-bottom: -2000000px;
-    padding-bottom: 2000000px;
-}
 
 .pan p {
     padding: 10px;
@@ -169,18 +187,15 @@ header-line (каждый как бы отдельная строка в header)
 
 .left-panel {
     width: 20%;
-    float: left;
 }
 
 .main-panel {
     width: 60%;
-    float: left;
     background-color: #fff;
 }
 
 .right-panel {
     width: 20%;
-    float: left;
 }
 
 
