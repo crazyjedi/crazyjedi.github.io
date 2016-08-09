@@ -95,24 +95,34 @@ header-line (каждый как бы отдельная строка в header)
 }
 
 .menu {
-    display: inline-flex;
+    display: inline-block;
 }
 
 .menu li {
     position: relative;
+    margin-right: 10px;
     padding: 0 5px;
 }
 
 .menu > li > a {
     display: block;
-    width: 135px;
+    width: 130px;
     height: 30px;
-    padding-left: 15px;
+    padding-left: 5px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.menu > li:last-child {
+    padding-left: 0;
+}
+
+.menu > li:nth-child(2) > a,
+.menu > li:nth-child(3) > a,
+.menu > li:nth-child(4) > a {
     background-image: url('../img/white_triangles.png');
     background-repeat: no-repeat;
     background-position: right center;
-    line-height: 20px;
-    box-sizing: border-box;
 }
 
 .submenu {
@@ -124,7 +134,7 @@ header-line (каждый как бы отдельная строка в header)
 
 .submenu > li > a {
     display: block;
-    width: 150px;
+    width: 120px;
     height: 30px;
     padding: 0 10px;
     background-color: #303030;
