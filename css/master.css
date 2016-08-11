@@ -70,21 +70,20 @@ header-line (каждый как бы отдельная строка в header)
 .countries-list > li {
     display: inline-block;
     /*margin: 0 -1px;*/
-    width : 55px;
+    width: 55px;
 }
 
 .countries-menu a,
 .countries-menu span
  {
     display: block;
-    text-align: center;
-    font-size: 11px;
     color: #128aa7;
+    font-size: 11px;
+    text-align: center;
 }
 
 .country-name:hover {
     color: #ff062f;
-
 }
 
 /*BODY*/
@@ -97,22 +96,21 @@ header-line (каждый как бы отдельная строка в header)
 
 .main-photo {
     width: 100%;
-    border-top:2px solid #138aa7;
-    border-bottom:2px solid #138aa7;
+    border-top: 2px solid #138aa7;
+    border-bottom: 2px solid #138aa7;
 }
 
 .main-menu {
+    position: relative;
     height: 30px;
     margin-top: -3px;
     padding-left: 20px;
-    border-bottom: 1px solid #000;
     border-top: 1px solid #cacbcb;
+    border-bottom: 1px solid #000;
     background-image: url('../img/menu_background.png');
-    -webkit-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.75);
-    position:relative;
-    z-index:2;
+    -moz-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .75);
+    -webkit-box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .75);
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .75);
 }
 
 .menu {
@@ -176,8 +174,8 @@ header-line (каждый как бы отдельная строка в header)
 }
 
 .body-box {
-    background-color: #edeef0;
     display: flex;
+    background-color: #edeef0;
 }
 
 
